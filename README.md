@@ -1,4 +1,4 @@
-# dashboard2.nc-realty.dev
+# vuetify-dashboard-client
 
 > A Vue.js project
 

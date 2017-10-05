@@ -23,15 +23,12 @@ Vue.config.productionTip = false
 
 Vue.router = router
 
-// import axios from 'axios'
 import axios from '@/plugins/axios'
 
 import VueAxios from 'vue-axios'
 import VueAuth from '@websanova/vue-auth'
 
 Vue.use(VueAxios, axios)
-
-// Vue.axios.defaults.baseURL = 'http://api.nc-realty.dev/api/v1'
 
 Vue.use(VueAuth, {
   auth: require('@websanova/vue-auth/drivers/auth/bearer.js'),

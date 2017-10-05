@@ -1,5 +1,5 @@
 import axios from 'axios'
 
 export default axios.create({
-  baseURL: 'http://api.nc-realty.dev/api/v1'
+  baseURL: 'http://localhost:8001/api/v1'
 })

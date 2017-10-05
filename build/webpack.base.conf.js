@@ -1,5 +1,4 @@
 var path = require('path')
-var fs = require('fs')
 var utils = require('./utils')
 var config = require('../config')
 var vueLoaderConfig = require('./vue-loader.conf')
@@ -23,9 +22,8 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src'),
-    },
-    symlinks: false
+      '@': resolve('src')
+    }
   },
   module: {
     rules: [
@@ -47,10 +45,6 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test')]
-      },
-      {
-        test: /\.styl$/,
-        loader: ['style-loader', 'css-loader', 'stylus-loader']
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
